@@ -7,5 +7,7 @@
     "cron": "^1.8.2",
     "discord-rich-presence": "^0.0.8",
     "moment": "^2.24.0"
-  }
+  },
+  "repository": "git@github.com:SergioGlorias/RPC-Aniversario.git",
+  "author": "Sergio <sergioglorias@gmail.com>"
 }
