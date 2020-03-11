@@ -1,0 +1,11 @@
+{
+  "name": "rpc-aniversario",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "discord-rich-presence": "^0.0.8",
+    "moment": "^2.24.0"
+  }
+}
