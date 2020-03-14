@@ -11,15 +11,17 @@ const { date , aniversario } = require("./config.json")
 
 const client = new RPC.Client({transport: "ipc"})
 
-let end = Date.parse(`${date.year}-${date.month}-${date.day}`)
+let end = moment(`${date.year}-${date.month}-${date.day}`, `YYYY-MM-DD`)
 
 function leftDays() {
-    let up = Date.now()
+    let up = moment()
     return moment(end).diff(up, 'days')
 }
 function leftsec() {
-    return Date.now()
+    return moment()
 }
+
+console.log(`🥳 ${moment(end)} 🎂`)
 
 client.on("connected", () => {
     console.log(clc.greenBright('Ready!'))
@@ -37,7 +39,7 @@ client.on("connected", () => {
             })
             console.log(`Só falta ${days + 1} dias`)
         } else if (days === 0) {
-            if ((await leftsec()) < end) {
+            if ((await leftsec().unix()) < end.unix()) {
                 client.setActivity({
                     details: `Vou fazer ${aniversario} anos!`,
                     state: `Amanhã`,
@@ -67,7 +69,7 @@ client.on("connected", () => {
     console.log("Contador de aniversário iniciado")
     run()
 
-    rl.on("line", (input) => {
+    rl.on("line", () => {
         run()
     })
 })
