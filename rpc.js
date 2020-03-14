@@ -68,7 +68,7 @@ client.on("connected", () => {
     run()
 
     rl.on("line", (input) => {
-        console.log("oi5656")
+        run()
     })
 })
 
