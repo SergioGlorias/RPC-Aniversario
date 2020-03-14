@@ -21,8 +21,6 @@ function leftsec() {
     return moment()
 }
 
-console.log(`🥳 ${moment(end)} 🎂`)
-
 client.on("connected", () => {
     console.log(clc.greenBright('Ready!'))
 
