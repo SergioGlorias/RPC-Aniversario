@@ -6,8 +6,8 @@
   "dependencies": {
     "cli-color": "^2.0.0",
     "cron": "^1.8.2",
-    "discord-rpc": "^3.1.0",
-    "moment": "^2.24.0"
+    "discord-rpc": "^3.1.4",
+    "moment": "^2.29.1"
   },
   "repository": "git@github.com:SergioGlorias/RPC-Aniversario.git",
   "author": "Sergio <sergioglorias@gmail.com>",
