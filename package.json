@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "cli-color": "^2.0.0",
+    "cli-color": "^2.0.1",
     "cron": "^1.8.2",
-    "discord-rpc": "^3.1.4",
+    "discord-rpc": "^4.0.1",
     "moment": "^2.29.1"
   },
   "repository": "git@github.com:SergioGlorias/RPC-Aniversario.git",
